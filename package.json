@@ -1,9 +1,9 @@
 {
   "name": "language-lsl",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "repository": "https://github.com/atom/language-lsl",
-  "license": "MIT",
+  "description": "Atom language syntax for Linden Scripting Language (LSL)",
+  "repository": "https://github.com/SoloMornington/language-lsl",
+  "license": "GPL-2.0+",
   "engines": {
     "atom": ">0.50.0"
   },

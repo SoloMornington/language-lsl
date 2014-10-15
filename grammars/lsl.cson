@@ -1,10 +1,11 @@
+'scopeName': 'source.lsl'
+'name': 'LSL'
 'fileTypes': [
   'esl'
   'lsl'
 ]
 'foldingStartMarker': '\\{\\s*$'
 'foldingStopMarker': '^\\s*\\}'
-'name': 'LSL'
 'patterns': [
   {
     'match': '^\\s*\\n'
@@ -19,16 +20,8 @@
     'name': 'valid.minus.lsl'
   }
   {
-    'match': '-[.0-9]'
-    'name': 'invalid.source.minus.lsl'
-  }
-  {
     'match': '^(?!\\s|state|default|float|integer|key|list|rotation|string|vector|\\w+\\s*\\()\\b.*$'
     'name': 'invalid.source.line.begin.lsl'
-  }
-  {
-    'match': '([^{};\\s,)\\]/]+|\\s+|\\)|,|])(?<!//)$'
-    'name': 'invalid.suspect.source.line.end.lsl'
   }
   {
     'match': '\\s\\s+'
@@ -136,35 +129,6 @@
     'name': 'variable.other.lsl'
   }
   {
-    'begin': '"'
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.lsl'
-    'end': '"(?!$)'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.lsl'
-    'name': 'string.quoted.double.lsl'
-    'patterns': [
-      {
-        'match': '\\\\(\\\\|["nt])'
-        'name': 'constant.character.escape.lsl'
-      }
-      {
-        'match': '\\\\.'
-        'name': 'invalid.illegal.unknown-escape.lsl'
-      }
-      {
-        'match': '\\s\\s+'
-        'name': 'invalid.suspect.string.multiple.spaces.lsl'
-      }
-      {
-        'match': '"$'
-        'name': 'invalid.suspect.string.line.end.lsl'
-      }
-    ]
-  }
-  {
     'begin': '(//)'
     'beginCaptures':
       '1':
@@ -176,11 +140,6 @@
         'match': '\\s+(?=$)'
         'name': 'invalid.suspect.comment.line.end.lsl'
       }
-      {
-        'match': '\\s\\s+'
-        'name': 'invalid.suspect.comment.multiple.spaces.lsl'
-      }
     ]
   }
 ]
-'scopeName': 'source.lsl'

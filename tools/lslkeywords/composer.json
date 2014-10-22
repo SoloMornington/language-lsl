@@ -1,11 +1,11 @@
 {
     "name": "mornington/atom-lsl-constants",
-    "description": "Verify that a sitemap.xml file is correct.",
+    "description": "Parse an llsd file to discover LSL keywords.",
     "license": "GPL-2.0",
     "authors": [
         {
-            "name": "Paul Mitchum",
-            "email": "paul@mile23.com"
+            "name": "Solo Mornington",
+            "email": "solomornington@gmail.com._remove_this"
         }
     ],
     "autoload": {
